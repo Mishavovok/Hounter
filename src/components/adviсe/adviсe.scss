@@ -1,0 +1,361 @@
+.advice {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+
+    @media(min-width: 1980px) {
+        width: 85%;
+        max-width: 1980px;
+    }
+
+    .advice__bg-left {
+        filter: blur(100px);
+        position: absolute;
+        left: -174px;
+        top: -15px;
+        width: 250px;
+        height: 250px;
+        border-radius: 92% 8% 92% 8% / 92% 8% 92% 8%;
+        background: #82ffd2;
+        z-index: -1;
+
+        @media(min-width: 1980px) {
+            left: -300px;
+        }
+    }
+
+    .advice__bg-right {
+        filter: blur(100px);
+        position: absolute;
+        top: 160px;
+        left: -235px;
+        width: 250px;
+        height: 250px;
+        border-radius: 8% 92% 8% 92% / 8% 92% 8% 92%;
+        background: #C8FF82;
+        z-index: -1;
+
+        @media(min-width: 1980px) {
+            left: -300px;
+        }
+    }
+
+    .advice__title {
+        color: #f59e0b;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 200px;
+        text-align: center;
+        position: relative;
+
+
+
+        @media(min-width: 1980px) {
+            font-size: 18px;
+        }
+
+        &::after {
+            content: "";
+            width: 32px;
+            height: 1px;
+            background: #f59e0b;
+            position: absolute;
+            left: 630px;
+            top: -10px;
+
+            @media(max-width: 1366px) {
+                left: 593px;
+            }
+
+            @media(max-width:1200px) {
+                left: 530px;
+            }
+
+            @media(max-width: 1024px) {
+                left: 450px;
+            }
+
+            @media(max-width: 990px) {
+                left: 435px;
+            }
+
+            @media(max-width: 866px) {
+                left: 365px;
+            }
+
+            @media(max-width: 417px) {
+                left: 177px;
+            }
+
+            @media(min-width: 1980px) {
+                left: 700px;
+            }
+        }
+    }
+
+    .advice__text {
+        width: 430px;
+        margin: 0 auto;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+
+        @media(max-width:1200px) {
+            width: 380px;
+            font-size: 28px;
+        }
+
+        @media(max-width: 1024px) {
+            width: 365px;
+            font-size: 26px;
+        }
+
+        @media(min-width: 1980px) {
+            width: 550px;
+            font-size: 40px;
+        }
+    }
+
+    .advice__button {
+        display: block;
+        margin: 20px auto;
+        border: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        border-radius: 32px;
+        background: #10B981;
+        padding: 14px 16px 14px 16px;
+
+        @media(min-width: 1980px) {
+            font-size: 18px;
+        }
+    }
+
+    .advice__blok {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width:417px) {
+            display: block;
+        }
+
+        @media(min-width: 1980px) {
+            justify-content: space-evenly;
+        }
+
+        .advice__blok-item {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            .advice__blok-item-img {
+                @media(max-width: 1024px) {
+                    width: 180px;
+                }
+
+                @media(max-width: 417px) {
+                    width: 160px;
+                }
+
+                @media(min-width: 1980px) {
+                    width: 250px;
+                }
+            }
+
+            .advice__blok-info {
+                margin-left: 25px;
+
+                @media(max-width: 1024px) {
+                    margin-left: 15px;
+                }
+
+                .advice__human-info {
+                    display: flex;
+                    align-items: center;
+
+                    .advice__human-info-img {
+                        @media(max-width: 1024px) {
+                            width: 25px;
+                        }
+                    }
+
+                    .advice__blok-info-name {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #3C4563;
+                        margin-left: 10px;
+
+                        @media(max-width: 1366px) {
+                            font-size: 12px;
+                        }
+
+                        @media(max-width: 1024px) {
+                            font-size: 11px;
+                        }
+
+                        @media(min-width: 1980px) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .advice__blok-info-data {
+                        font-size: 14px;
+                        color: #888B97;
+                        font-weight: 400;
+                        margin-left: 10px;
+
+                        @media(max-width: 1366px) {
+                            font-size: 12px;
+                        }
+
+                        @media(max-width: 1024px) {
+                            font-size: 11px;
+                        }
+
+                        @media(min-width: 1980px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .advice__blok-info-title {
+                    font-size: 18px;
+                    width: 325px;
+                    font-weight: 500;
+                    margin: 10px 0 0 0;
+
+                    @media(max-width: 1366px) {
+                        font-size: 14px;
+                        width: 240px;
+                    }
+
+                    @media(max-width: 1024px) {
+                        width: 223px;
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 866px) {
+                        width: 207px;
+                        font-size: 11px;
+                    }
+
+                    @media(max-width:417px) {
+                        width: 175px;
+                    }
+
+                    @media(min-width: 1980px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .advice__blok-left {
+            margin-top: 30px;
+
+            .advice__blok-left-img {
+                @media(max-width: 1024px) {
+                    width: 460px;
+                }
+
+                @media (max-width: 866px) {
+                    width: 350px;
+                }
+            }
+
+            .advice__blok-left-info {
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+
+                .advice__blok-left-name {
+                    color: #3C4563;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-left: 10px;
+
+                    @media(max-width: 1366px) {
+                        font-size: 12px;
+                    }
+
+                    @media(min-width: 1980px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .advice__blok-left-title {
+                font-size: 24px;
+                font-weight: 500;
+                margin: 10px 0 10px 0;
+
+                @media(max-width: 1366px) {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 866px) {
+                    font-size: 16px;
+                }
+
+                @media(min-width: 1980px) {
+                    font-size: 28px;
+                }
+            }
+
+            .advice__blok-left-text {
+                width: 551px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #626687;
+                margin: 5px 0 5px 0;
+
+                @media(max-width: 1366px) {
+                    font-size: 12px;
+                }
+
+                @media(max-width: 1024px) {
+                    width: 457px;
+                }
+
+                @media(max-width: 866px) {
+                    width: 345px;
+
+                }
+
+                @media(min-width: 1980px) {
+
+                    width: 650px;
+                    font-size: 17px;
+                }
+            }
+
+            .advice__blok-info-data {
+                display: flex;
+                align-items: center;
+
+                .advice__blok-info-data-text {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #888B97;
+
+                    @media(max-width:1366px) {
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+
+                    @media(max-width: 1024px) {
+                        font-size: 11px;
+                    }
+
+                    @media(min-width: 1980px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

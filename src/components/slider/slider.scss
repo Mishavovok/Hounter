@@ -1,0 +1,148 @@
+.slider {
+  user-select: none;
+  width: 708px;
+  height: 100px;
+  margin-left: 220px;
+  margin-top: -175px;
+
+  @media(max-width:1200px) {
+    margin-top: -105px;
+    margin-left: 105px;
+  }
+
+  @media(max-width:1024px) {
+    margin-left: 45px;
+  }
+
+  @media(min-width: 1980px) {
+
+    margin-left: 662px;
+  }
+
+  .slider__item-people {
+    width: 328px;
+    display: flex;
+    height: 104px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 32px;
+
+    @media (max-width: 1366px) {
+      width: 290px;
+      height: 80px;
+    }
+
+    .people {
+      width: 100px;
+    }
+
+    .slider__item-img {
+      width: 119px;
+
+      @media (max-width: 1366px) {
+        width: 100px;
+      }
+    }
+
+    .slider__item-people-info {
+      margin-left: 10px;
+
+      .slider__item-people-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (max-width: 1366px) {
+          font-size: 13px;
+        }
+      }
+
+      .slider__item-people-text {
+        font-size: 12px;
+        color: #68799f;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .slider__item-house {
+    display: flex;
+    height: 104px;
+    width: 201px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 32px;
+
+    @media (max-width: 1366px) {
+      width: 190px;
+      height: 80px;
+    }
+
+    .slider__item-img {
+      width: 56px;
+    }
+
+    .slider__item-house-info {
+      margin-left: 10px;
+
+      .slider__item-house-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (max-width: 1366px) {
+          font-size: 13px;
+        }
+      }
+
+      .slider__item-house-text {
+        font-size: 12px;
+        color: #68799f;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .slider__item-newhomes {
+    width: 305px;
+    display: flex;
+    height: 104px;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 32px;
+
+    @media (max-width: 1366px) {
+      height: 80px;
+    }
+
+    .slider__item-img {
+      width: 56px;
+      margin-left: 10px;
+    }
+
+    .slider__item-newhomes-info {
+      margin-left: 5px;
+
+      .slider__item-newhomes-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (max-width: 1366px) {
+          font-size: 12px;
+        }
+      }
+
+      .slider__item-newhomes-text {
+        font-size: 12px;
+        color: #68799f;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// }

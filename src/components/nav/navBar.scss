@@ -1,0 +1,265 @@
+.header {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  @media(min-width: 1980px) {
+    width: 85%;
+    max-width: 1980px;
+  }
+
+}
+
+.nav {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1366px) {
+    margin-top: 20px;
+  }
+
+  @media(max-width:1200px) {
+    margin-top: 5px;
+  }
+
+  &__bg {
+    filter: blur(150px);
+    position: absolute;
+    left: -370px;
+    top: -255px;
+    width: 450px;
+    height: 450px;
+    border-radius: 92% 8% 92% 8% / 92% 8% 92% 8%;
+    background: #82ffd2;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    filter: blur(150px);
+    position: absolute;
+    top: -370px;
+    left: -180px;
+    width: 450px;
+    height: 450px;
+    border-radius: 8% 92% 8% 92% / 8% 92% 8% 92%;
+    background: #82f7ff;
+    z-index: -1;
+  }
+
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+
+    .nav__logo-img {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    .nav__logo-text {
+      color: #1b1c57;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+
+
+  .nav__list {
+    display: flex;
+    position: relative;
+
+    @media(max-width: 417px) {
+      display: none;
+    }
+
+    .nav__link {
+      cursor: pointer;
+      list-style: none;
+      border-radius: 32px;
+      border: 1px solid #ffffffc9;
+      padding: 12px 24px 12px 24px;
+      margin-left: 20px;
+      color: #f0f3fd;
+      font-size: 14px;
+      font-weight: 600;
+
+      &:last-child {
+        margin-left: 30px;
+
+        @media(max-width:866px) {
+          margin-left: 20px;
+        }
+      }
+
+      &:hover {
+        color: #047857;
+        background: #d1fae5;
+      }
+
+      @media(max-width:1024px) {
+        padding: 10px 20px 10px 20px;
+        font-size: 12px;
+      }
+
+      @media(max-width:990px) {
+        margin-left: 15px;
+      }
+
+      @media(max-width:866px) {
+        margin-left: 10px;
+        padding: 8px 17px 8px 17px;
+      }
+
+      .nav__list-menu {
+        position: absolute;
+        padding: 0;
+        margin-top: 10px;
+
+        .nav__list-menu-link {
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #f0f3fd;
+          list-style: none;
+        }
+
+      }
+
+
+      .nav__link-img {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .nav__list-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #047857;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+
+
+    .nav__link {
+      cursor: pointer;
+      list-style: none;
+      text-align: center;
+      padding: 12px 24px 12px 24px;
+      margin-left: 20px;
+      color: #f0f3fd;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+
+      &:hover {
+        color: #d1fae5;
+
+      }
+
+      .nav__link-img {
+        margin-left: 5px;
+      }
+    }
+
+    .nav__list-menu {
+
+      padding: 0;
+      margin-top: 10px;
+
+      .nav__list-menu-link {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #f0f3fd;
+        list-style: none;
+      }
+
+    }
+
+  }
+
+  .nav__burger {
+    display: none;
+    z-index: 10;
+
+    .nav__list-line-clouse {
+      margin-top: 10px;
+      width: 20px;
+      height: 2px;
+
+      display: block;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        width: 20px;
+        height: 2px;
+        transform: rotate(-45deg);
+        background: #1b1c57;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        width: 20px;
+        height: 2px;
+        transform: rotate(45deg);
+        background: #1b1c57;
+      }
+
+
+    }
+
+    .nav__list-line {
+
+      margin-top: 15px;
+      width: 20px;
+      height: 2px;
+      background: #1b1c57;
+      display: block;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 6px;
+        width: 20px;
+        height: 2px;
+        background: #1b1c57;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 20px;
+        height: 2px;
+        background: #1b1c57;
+      }
+    }
+
+    @media(max-width: 417px) {
+      display: block;
+    }
+  }
+
+
+}

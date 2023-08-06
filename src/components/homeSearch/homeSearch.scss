@@ -1,0 +1,265 @@
+.homesearch {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  @media(min-width: 1980px) {
+    width: 85%;
+    max-width: 1980px;
+  }
+
+  .homesearch-title {
+    color: #f59e0b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 150px;
+    margin-left: 40px;
+    position: relative;
+
+    @media(max-width: 417px) {
+      text-align: center;
+    }
+
+    @media(min-width: 1980px) {
+      font-size: 18px;
+    }
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: #f59e0b;
+      position: absolute;
+      left: -35px;
+      top: 9px;
+
+      @media(max-width: 417px) {
+        left: 55px;
+      }
+
+      @media(max-width: 375px) {
+        left: 35px;
+      }
+
+      @media(min-width: 1980px) {
+        left: -40px;
+      }
+    }
+
+
+  }
+
+  .homesearch__filter {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 40px;
+
+    @media(max-width: 417px) {
+      display: block;
+    }
+
+    .homesearch__filter-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-right: 100px;
+
+      @media(max-width: 1366px) {
+        font-size: 30px;
+      }
+
+      @media(max-width: 1200px) {
+        font-size: 25px;
+        margin-right: 0;
+      }
+
+      @media(max-width:1024px) {
+        font-size: 22px;
+      }
+
+      @media(max-width: 417px) {
+        text-align: center;
+      }
+
+      @media(min-width: 1980px) {
+        font-size: 40px;
+      }
+
+    }
+
+
+
+    .homesearch__filter-item-activ {
+      display: flex;
+      margin-left: 30px;
+      align-items: center;
+      border-radius: 32px;
+      border: 1px solid #e0e3eb;
+      background: #D1FAE5;
+      padding: 12px 24px 12px 24px;
+
+
+      .homesearch__filter-item-img-activ {
+        @media(min-width: 1980px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .homesearch__filter-item-img-activ path {
+        fill: #10b981;
+
+
+      }
+
+
+
+
+      .homesearch__filter-item-title-activ {
+        color: #10b981;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 0 10px;
+
+        @media(min-width: 1980px) {
+          font-size: 25px;
+        }
+
+
+      }
+    }
+
+    .homesearch__filter-item {
+      display: flex;
+      margin-left: 30px;
+      align-items: center;
+      border-radius: 32px;
+      border: 1px solid #e0e3eb;
+      background: #ffffff;
+      padding: 12px 24px 12px 24px;
+
+      @media(max-width:866px) {
+        margin-left: 15px;
+      }
+
+      @media(max-width:417px) {
+        width: 250px;
+        justify-content: center;
+        margin: 10px auto;
+      }
+
+      .homesearch__filter-item-img {
+        @media(min-width: 1980px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .homesearch__filter-item-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 0 10px;
+        color: #888b97;
+
+        @media(min-width: 1980px) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .button__prev {
+      margin-left: 250px;
+      border: none;
+      background: #E0E3EB;
+      border-radius: 32px;
+      padding: 12px 19px 12px 16px;
+
+      @media(max-width: 1200px) {
+        margin-left: 150px;
+      }
+
+      @media(max-width:1024px) {
+        margin-left: 110px;
+      }
+
+      @media(max-width:990px) {
+        margin-left: 85px;
+      }
+
+      @media(max-width:866px) {
+        margin-left: 15px;
+      }
+
+      @media(max-width:417px) {
+        margin-left: 115px;
+      }
+
+      @media(min-width: 1980px) {
+
+        padding: 16px 16px 16px 19px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &:hover {
+        background: #10B981;
+
+        svg path {
+          fill: #ffffffff;
+        }
+      }
+    }
+
+    .button__next {
+      border: none;
+      margin-left: 10px;
+      background: #E0E3EB;
+      border-radius: 32px;
+      padding: 12px 16px 12px 19px;
+
+      @media(min-width: 1980px) {
+        padding: 16px 16px 16px 19px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &:hover {
+        background: #10B981;
+
+        svg path {
+          fill: #ffffffff;
+        }
+      }
+    }
+  }
+
+  .card {
+    width: 1295px;
+
+    @media(max-width: 866px) {
+      width: 1000px;
+    }
+
+    @media(min-width: 1980px) {
+      width: 1800px;
+    }
+
+    .mySwiper {
+      display: flex;
+
+      .swiper-wrapper {
+        margin-left: 17px;
+      }
+    }
+
+    .cart__item {
+      display: flex;
+    }
+  }
+}
