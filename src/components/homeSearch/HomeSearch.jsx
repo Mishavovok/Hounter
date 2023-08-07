@@ -24,7 +24,7 @@ function HomeSearch() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:3000/button')
+    fetch('https://64d0b822ff953154bb79589e.mockapi.io/button')
       .then((res) => {
         return res.json();
       })
@@ -34,7 +34,7 @@ function HomeSearch() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/homecard?${activ > 0 ? `status=${activ}` : ''}`)
+    fetch(`https://64d0b822ff953154bb79589e.mockapi.io/homecard?${activ > 0 ? `status=${activ}` : ''}`)
       .then((res) => {
         return res.json();
       })
