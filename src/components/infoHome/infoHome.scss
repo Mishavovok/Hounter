@@ -74,6 +74,10 @@
         margin-left: 40px;
         position: relative;
 
+        @media(max-width:417px) {
+            margin-top: 120px;
+        }
+
         &::after {
             content: "";
             width: 32px;
@@ -96,6 +100,7 @@
 
         @media(max-width:417px) {
             display: block;
+            margin-left: 27px;
         }
 
         .infohome__blok-item-title {
